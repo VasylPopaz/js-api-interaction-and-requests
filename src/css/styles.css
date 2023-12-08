@@ -1,9 +1,13 @@
 body {
   font-family: 'Manrope', sans-serif;
 }
+h2,
+p {
+  margin: 0;
+}
 .breed-select {
   margin-bottom: 15px;
-  width: 250px;
+  width: 20%;
 }
 .cat-info {
   display: flex;
@@ -11,14 +15,18 @@ body {
 }
 .cat-img {
   display: block;
-  width: 400px;
+  width: 30%;
   height: auto;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .description-container {
-  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 50%;
+  padding: 8px;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -79,7 +87,6 @@ body {
     transform: rotate(360deg);
   }
 }
-
 .hide {
   display: none;
 }
