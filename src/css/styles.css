@@ -6,12 +6,16 @@ p {
   margin: 0;
 }
 .breed-select {
+  margin-left: 20px;
   margin-bottom: 15px;
-  width: 20%;
+  width: 200px;
 }
 .cat-info {
   display: flex;
+  align-items: center;
+  max-height: 50%;
   gap: 10px;
+  padding-left: 20px;
 }
 .cat-img {
   display: block;
