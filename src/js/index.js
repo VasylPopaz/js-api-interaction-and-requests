@@ -25,7 +25,7 @@ fetchBreeds()
     showElement(breedSelect);
     breedSelect.innerHTML = optionsTemplate(receivedData);
     new SlimSelect({
-      select: '#breed-select',
+      select: breedSelect,
     });
 
     breedSelect.addEventListener('change', () => {
