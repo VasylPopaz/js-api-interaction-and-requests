@@ -2,6 +2,7 @@ import { fetchBreeds, fetchCatByBreed } from './cat-api';
 import { catInfoTemplate, optionsTemplate } from './markup';
 import Notiflix from 'notiflix';
 import SlimSelect from 'slim-select';
+import 'slim-select/dist/slimselect.css';
 Notiflix.Notify.init({
   position: 'center-top',
 });
@@ -24,7 +25,7 @@ fetchBreeds()
     showElement(breedSelect);
     breedSelect.innerHTML = optionsTemplate(receivedData);
     new SlimSelect({
-      select: breedSelect,
+      select: '#breed-select',
     });
 
     breedSelect.addEventListener('change', () => {
